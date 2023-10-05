@@ -4,7 +4,7 @@
 
 #### Project links
 
-- Solution URL:
+- Solution URL: https://github.com/coderSeth13/FEM_SINGLE_PRICE_COMPONENT.git
 - Live Site URL:
 
 #### Social links
@@ -15,3 +15,4 @@
 - Github: https://github.com/coderSeth13?tab=repositories
 
 ### Screenshot
+![Screen Shot 2023-10-05 at 22 51 02](https://github.com/coderSeth13/FEM_SINGLE_PRICE_COMPONENT/assets/145410639/5ae710f0-3992-4450-b3a8-8b3e0c06426b)
