@@ -5,7 +5,7 @@
 
   --clr-secondary-hsl-100: 0, 0%, 100%;
   --clr-secondary-hsl-200: 204, 43%, 93%;
-  --clr-secondary-hsl-400: 218, 22%, 67%;
+  --clr-secondary-hsl-400: 218, 22%, 40%;
 
   --clr-primary-400: hsl(var(--clr-primary-hsl-400));
   --clr-primary-500: hsl(var(--clr-primary-hsl-500));
@@ -65,7 +65,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-100);
   font-weight: var(--fw-regular);
-  color: var(--clr-secondary-400);
+  color: hsl(var(--clr-secondary-hsl-400), 0.75);
   background-color: var(--clr-primary-700);
 
   display: grid;
@@ -118,6 +118,7 @@ section > div:nth-child(3) {
   border-radius: var(--size-100);
   cursor: pointer;
   border: none;
+  box-shadow: 0.3rem 0.5rem 2rem hsl(var(--clr-secondary-hsl-400), 0.5);
 }
 
 .btn:hover,
@@ -155,7 +156,7 @@ section > div:nth-child(3) {
 }
 
 .clr-bg-primary-400 {
-  background: hsl(var(--clr-primary-hsl-500), 0.5);
+  background: hsl(var(--clr-primary-hsl-500), 0.8);
 }
 
 .clr-primary-600 {
@@ -182,18 +183,22 @@ section > div:nth-child(3) {
   font-size: 2rem;
 }
 
-/* Small screen widths */
-@media (max-width: 800px) {
-}
-
 /* Big screen widths */
 @media (min-width: 800px) {
   .container {
-    max-width: 35rem;
+    max-width: 40rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "Join-communtiy Join-communtiy"
       "Monthly-subscription Why-us";
+  }
+
+  .card {
+    padding: 2.1rem;
+  }
+
+  .heading-1 {
+    font-size: 1.5rem;
   }
 
   section > div:nth-child(1) {
